@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  border-radius: 2px solid white;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #fa8bff;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.589);
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+#time {
+  color: #000;
+  text-shadow: 3px 3px 0px #6d6d6d;
+  font-size: 60px;
+  margin: 1rem 0rem;
+  width: 380px;
+  text-align: center;
+}
+
+.alarm {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.alarm.disable {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.alarm .column {
+  border: 1px solid #999;
+  border-radius: 5px;
+  width: calc(100% / 3 - 5px);
+  padding: 0px 10px;
+}
+
+.column select {
+  outline: none;
+  border: none;
+  height: 53px;
+  width: 100%;
+  font-size: 19px;
+  background-color: transparent;
+}
+
+.column select option {
+  background-color: transparent;
+}
+
+.main button {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 17px 0px;
+  outline: none;
+  border: none;
+  color: #fff;
+  border-radius: 1rem;
+  background: #4a98f7;
+  cursor: pointer;
+}
+
+.main .alarm.disable {
+  opacity: 0.6;
+  pointer-events: none;
+}
